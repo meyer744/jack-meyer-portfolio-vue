@@ -19,6 +19,11 @@ const routes = [
     name: "blogPostIndividual",
     component: BlogPostsIndividual,
   },
+  {
+    path: "jack-meyer-portfolio-vue/",
+    name: "home",
+    component: HomePage,
+  },
 ];
 
 const router = createRouter({
