@@ -10,6 +10,10 @@ const routes = [
     component: HomePage,
   },
   {
+    path: "/jack-meyer-portfolio-vue/",
+    redirects: "/",
+  },
+  {
     path: "/blog",
     name: "blog",
     component: BlogPosts,
