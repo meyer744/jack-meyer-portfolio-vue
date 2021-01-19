@@ -8,7 +8,6 @@ const routes = [
     path: "/",
     name: "home",
     component: HomePage,
-    redirects: '/jack-meyer-portfolio-vue/',
   },
   {
     path: "/blog",
@@ -24,6 +23,7 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(),
+  base: process.env.BASE_URL,
   routes,
 });
 
