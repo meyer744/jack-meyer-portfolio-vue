@@ -11,7 +11,7 @@ const routes = [
   },
   {
     path: "/jack-meyer-portfolio-vue/",
-    redirects: "/",
+    component: HomePage,
   },
   {
     path: "/blog",
