@@ -1,6 +1,6 @@
 <template>
 <portfolio-home
-:profile-pic="require('../assets/images/jack-meyer-pic.jpg')"
+:profile-pic="require('/src/assets/images/jack-meyer-pic.jpg')"
 ></portfolio-home>
 <section-header>Projects</section-header>
 <project-search v-model="searchInput" @input="filterProjects"></project-search>

@@ -1,5 +1,5 @@
 <template>
-<the-nav-bar-new :resumeLink="'/assets/files/jackMeyerResume.pdf'"></the-nav-bar-new>
+<the-nav-bar-new :resumeLink="'https://area.emlaunch.com/wp-content/uploads/2021/01/jackMeyerResume.pdf'"></the-nav-bar-new>
 <router-view />
 <section-header-dark>Find Me Here</section-header-dark> 
 <social-buttons></social-buttons>

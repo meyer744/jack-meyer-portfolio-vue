@@ -1,3 +1,6 @@
 module.exports = {
-  publicPath: '/jack-meyer-portfolio-vue/'
+    publicPath: process.env.NODE_ENV === 'production'
+      ? '/jack-meyer-portfolio-vue/'
+      : '/'
   }
+  

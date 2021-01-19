@@ -8,6 +8,7 @@ const routes = [
     path: "/",
     name: "home",
     component: HomePage,
+    redirects: '/jack-meyer-portfolio-vue/',
   },
   {
     path: "/blog",
@@ -18,12 +19,7 @@ const routes = [
     path: "/blog/:slug",
     name: "blogPostIndividual",
     component: BlogPostsIndividual,
-  },
-  {
-    path: "/jack-meyer-portfolio-vue/",
-    name: "home",
-    component: HomePage,
-  },
+  }
 ];
 
 const router = createRouter({
