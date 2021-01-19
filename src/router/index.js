@@ -20,7 +20,7 @@ const routes = [
     component: BlogPostsIndividual,
   },
   {
-    path: "jack-meyer-portfolio-vue/",
+    path: "/jack-meyer-portfolio-vue/",
     name: "home",
     component: HomePage,
   },
