@@ -17,6 +17,7 @@
     "bootstrap-vue": "^2.21.2",
     "comfortable-javascript": "^1.2.2",
     "core-js": "^3.6.5",
+    "dist": "^0.1.2",
     "font-awesome": "^4.7.0",
     "lodash": "^4.17.20",
     "vue": "^3.0.5",
