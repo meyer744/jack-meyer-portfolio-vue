@@ -28,25 +28,25 @@
         <li>
           <a class="icon" href="https://www.facebook.com/meyer744/">
             <font-awesome-icon :icon="['fab', 'facebook-f']" />
-            <span> - Facebook</span>
+            <!-- <span> - Facebook</span> -->
           </a>
         </li>
         <li>
           <a class="icon" href="https://github.com/meyer744">
             <font-awesome-icon :icon="['fab', 'github']" />
-            <span> - GitHub</span>
+            <!-- <span> - GitHub</span> -->
           </a>
         </li>
         <li>
           <a class="icon" href="mailto:meyer.744@gmail.com">
             <font-awesome-icon :icon="['far', 'envelope']" />
-            <span> - Gmail</span>
+            <!-- <span> - Gmail</span> -->
           </a>
         </li>
         <li>
           <a class="icon" href="https://www.linkedin.com/in/jack-v-meyer/">
             <font-awesome-icon :icon="['fab', 'linkedin-in']" />
-            <span> - LinkedIn</span>
+            <!-- <span> - LinkedIn</span> -->
           </a>
         </li>
       </ul>
@@ -82,25 +82,25 @@
             <li>
               <a class="icon" href="https://www.facebook.com/meyer744/">
                 <font-awesome-icon :icon="['fab', 'facebook-f']" />
-                <span> - Facebook</span>
+                <!-- <span> - Facebook</span> -->
               </a>
             </li>
             <li>
               <a class="icon" href="https://github.com/meyer744">
                 <font-awesome-icon :icon="['fab', 'github']" />
-                <span> - GitHub</span>
+                <!-- <span> - GitHub</span> -->
               </a>
             </li>
             <li>
               <a class="icon" href="mailto:meyer.744@gmail.com">
                 <font-awesome-icon :icon="['far', 'envelope']" />
-                <span> - Gmail</span>
+                <!-- <span> - Gmail</span> -->
               </a>
             </li>
             <li>
               <a class="icon" href="https://www.linkedin.com/in/jack-v-meyer/">
                 <font-awesome-icon :icon="['fab', 'linkedin-in']" />
-                <span> - LinkedIn</span>
+                <!-- <span> - LinkedIn</span> -->
               </a>
             </li>
           </ul>
