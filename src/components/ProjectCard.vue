@@ -60,6 +60,7 @@ export default {
   margin: 20px 0 20px;
   transition: 0.3s ease-in-out;
   max-width: 390px;
+  margin: auto;
 }
 
 .cards:hover {
@@ -89,5 +90,16 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+.row-cols-md-3>* {
+  flex: 1 1 360px;
+}
 }
 </style>
