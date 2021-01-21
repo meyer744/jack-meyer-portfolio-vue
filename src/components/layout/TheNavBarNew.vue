@@ -130,6 +130,7 @@ nav {
 .hamburger {
   color: rgb(196, 195, 202);
   padding: 10px;
+  font-size: 24px;
 }
 
 ul {
