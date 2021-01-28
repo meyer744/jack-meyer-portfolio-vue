@@ -10,10 +10,32 @@
         <img :alt="post.fields.title" :src="`${post.fields.image[0].fields.file.url}`">
       </div>
       <div class="content-wrapper">
-        <!-- <h2>{{ post.fields.title }}</h2> -->
         <div class="content" v-html="post.fields.content.html"></div>
         <div class="author">
-          <img :src="`${author.fields.avatar[0].fields.file.url}?w=50&h=50&fit=crop`" alt="author.fields.name"> Written by {{ author.fields.name }}
+          <div class="social-icons">
+          <ul class="social-links">
+            <li>
+              <a class="icon facebook" :href="'https://www.facebook.com/sharer/sharer.php?u=https://www.jackvmeyer.com/blog/' + post.fields.slug" target="_blank">
+                <font-awesome-icon :icon="['fab', 'facebook-f']" />
+              </a>
+            </li>
+            <li>
+              <a class="icon twitter" :href="'https://twitter.com/intent/tweet?url=https://www.jackvmeyer.com/blog/' + post.fields.slug" target="_blank">
+                <font-awesome-icon :icon="['fab', 'twitter']" />
+              </a>
+            </li>
+            <li>
+              <a class="icon linked-in" :href="'https://www.linkedin.com/shareArticle?mini=true&url=https://www.jackvmeyer.com/blog/' + post.fields.slug" target="_blank">
+                <font-awesome-icon :icon="['fab', 'linkedin-in']" />
+              </a>
+            </li>
+            <li>
+              <a class="icon mail" :href="'mailto:?&subject=&body=https://www.jackvmeyer.com/blog/' + post.fields.slug">
+                <font-awesome-icon :icon="['far', 'envelope']" />
+              </a>
+            </li>
+          </ul>
+        </div>
         </div>
       </div>
     </article>
@@ -126,5 +148,28 @@ img {
         margin-right: 10px;
         border-radius: 50%;
   }
+
+.social-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0px;
+}
+
+.icon {
+  padding: 10px;
+}
+.linked-in {
+  color: #0072b1;
+}
+.facebook {
+  color: #16A4FB;
+}
+.twitter {
+  color: #1DA1F2;
+}
+.mail {
+  color: #343A40;
+}
   
 </style>
