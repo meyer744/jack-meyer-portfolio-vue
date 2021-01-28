@@ -3,7 +3,7 @@
 <div v-for="(post, i) in posts" :key="post.meta.id">
     <router-link :to="`/blog/${post.fields.slug}`">
   <div v-if="i < 3" class="col">
-    <div class="card">
+    <div class="card w-100 h-100">
       <img :alt="post.fields.title" :src="`${post.fields.image[0].fields.file.url}`" class="card-img-top">
       </div>
       <div class="card-body">
