@@ -68,16 +68,13 @@ a {
 .card {
   margin: auto;
 }
-.g-4 {
-  width: 85%;
-  margin: auto;
-  padding-bottom: 60px;
+
+.row {
+  padding: 15px;
+  margin: 0;
+  min-height: 100vh;
 }
-@media screen and (min-width: 899px) {
-  .g-4 {
-    width: 60%;
-  }
-}
+
 .blog-page-heading {
   padding: 20px;
   padding-bottom: 0px;

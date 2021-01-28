@@ -9,7 +9,8 @@
 <style scoped>
 div {
 background-color: rgb(21, 21, 22);
-padding: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
 }
 
 p {
