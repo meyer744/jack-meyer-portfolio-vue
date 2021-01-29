@@ -116,7 +116,7 @@ img {
     }
 
 .post .image {
-        width: 45%;
+        width: 40%;
         padding: 10px;
         margin: auto;
         /* object-fit: cover; */
