@@ -153,7 +153,7 @@ export default {
   display: flex;
   margin: auto;
   max-width: 1300px;
-  padding: 18px;
+  padding: 8px;
   padding-top: 0px;
   margin-bottom: 60px;
 }
