@@ -116,7 +116,7 @@ img {
     }
 
 .post .image {
-        width: 25%;
+        width: 45%;
         padding: 10px;
         margin: auto;
         /* object-fit: cover; */
@@ -124,13 +124,13 @@ img {
 
 @media screen and (max-width: 1200px) {
         .post .image {
-         width: 45%
+         width: 65%
      }
  }
  
 @media screen and (max-width: 675px) {
     .post .image {
-         width: 90%
+         width: 95%
      }
  }
 
