@@ -24,12 +24,12 @@ v-for="p in projectsFiltered"
 
 <script>
 import PortfolioHome from './PortfolioHome.vue'
-import ProjectCard from './ProjectCard'
-import ProjectSearch from './ProjectSearch'
-import SectionHeader from './SectionHeader'
-import MyResume from './MyResume'
+import ProjectCard from './ProjectCard.vue'
+import ProjectSearch from './ProjectSearch.vue'
+import SectionHeader from './SectionHeader.vue'
+import MyResume from './MyResume.vue'
 import BlogPostsRow from './blog/BlogPostsRow.vue'
-import LoadMoreButton from '../components/UI/LoadMoreButton'
+import LoadMoreButton from '../components/UI/LoadMoreButton.vue'
 
 export default {
   components: {
