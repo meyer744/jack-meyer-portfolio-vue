@@ -135,7 +135,7 @@ img {
  }
 
 .content {
-        max-width: 800px;
+        max-width: 650px;
         margin: auto;
         padding: 20px;
     }
