@@ -16,6 +16,7 @@ v-for="p in projectsFiltered"
 :git-link="p.gitUrl"
 ></project-card>
 </div>
+<load-more-button @click="loadMore">Load More...</load-more-button>
 <my-resume></my-resume>
 <section-header>My Latest Blog Posts</section-header>
 <blog-posts-row></blog-posts-row>
@@ -28,6 +29,7 @@ import ProjectSearch from './ProjectSearch'
 import SectionHeader from './SectionHeader'
 import MyResume from './MyResume'
 import BlogPostsRow from './blog/BlogPostsRow.vue'
+import LoadMoreButton from '../components/UI/LoadMoreButton'
 
 export default {
   components: {
@@ -37,12 +39,22 @@ export default {
     SectionHeader,
     MyResume,
     BlogPostsRow,
+    LoadMoreButton
   },
   name: 'home',
   computed: {
     projectsFiltered() {
+      let initialProjects = [];
+      for(let i = 0; i < (this.amountLoaded); i++) {
+        if(this.amountLoaded < 9) {
+          initialProjects.push(this.projects[i]);
+          } else {
+            initialProjects = this.projects;
+          }
+        }
+
       if(this.searchInput === '') {
-        return this.projects;
+        return initialProjects;
       } else {
       let filtered = this.projects.filter(project => project.title.toLowerCase().includes(this.searchInput.toLowerCase()) || 
       project.description.toLowerCase().includes(this.searchInput.toLowerCase()));
@@ -53,11 +65,16 @@ export default {
    methods: {
         filterProjects() {
           console.log(this.projectsFiltered);
+        },
+        loadMore() {
+          this.amountLoaded++;
+          console.log(this.amountLoaded);
         }
       },
   data() {
     return {
       searchInput: '',
+      amountLoaded: 3,
       projects: [
     {   
         category: "React",
