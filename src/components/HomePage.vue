@@ -1,35 +1,38 @@
 <template>
-<portfolio-home
-:profile-pic="require('/src/assets/images/jack-meyer-pic.jpg')"
-></portfolio-home>
-<section-header>Projects</section-header>
-<project-search v-model="searchInput" @input="filterProjects"></project-search>
-<div class="row row-cols-1 row-cols-md-3 g-4">
-<project-card
-v-for="p in projectsFiltered"
-:key="p.title"
-:card-image="p.projPicUrl"
-:title="p.title"
-:description="p.description"
-:tech-list="p.technology"
-:live-link="p.siteUrl"
-:git-link="p.gitUrl"
-></project-card>
-</div>
-<load-more-button @click="loadMore">Load More...</load-more-button>
-<my-resume></my-resume>
-<section-header>My Latest Blog Posts</section-header>
-<blog-posts-row></blog-posts-row>
+  <portfolio-home
+    :profile-pic="require('/src/assets/images/jack-meyer-pic.jpg')"
+  ></portfolio-home>
+  <section-header>Projects</section-header>
+  <project-search
+    v-model="searchInput"
+    @input="filterProjects"
+  ></project-search>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <project-card
+      v-for="p in projectsFiltered"
+      :key="p.title"
+      :card-image="p.projPicUrl"
+      :title="p.title"
+      :description="p.description"
+      :tech-list="p.technology"
+      :live-link="p.siteUrl"
+      :git-link="p.gitUrl"
+    ></project-card>
+  </div>
+  <load-more-button v-if="amountLoaded < projects.length" @click="loadMore">Load More... </load-more-button>
+  <my-resume></my-resume>
+  <section-header>My Latest Blog Posts</section-header>
+  <blog-posts-row></blog-posts-row>
 </template>
 
 <script>
-import PortfolioHome from './PortfolioHome.vue'
-import ProjectCard from './ProjectCard.vue'
-import ProjectSearch from './ProjectSearch.vue'
-import SectionHeader from './SectionHeader.vue'
-import MyResume from './MyResume.vue'
-import BlogPostsRow from './blog/BlogPostsRow.vue'
-import LoadMoreButton from '../components/UI/LoadMoreButton.vue'
+import PortfolioHome from "./PortfolioHome.vue";
+import ProjectCard from "./ProjectCard.vue";
+import ProjectSearch from "./ProjectSearch.vue";
+import SectionHeader from "./SectionHeader.vue";
+import MyResume from "./MyResume.vue";
+import BlogPostsRow from "./blog/BlogPostsRow.vue";
+import LoadMoreButton from "../components/UI/LoadMoreButton.vue";
 
 export default {
   components: {
@@ -39,113 +42,145 @@ export default {
     SectionHeader,
     MyResume,
     BlogPostsRow,
-    LoadMoreButton
+    LoadMoreButton,
   },
-  name: 'home',
+  name: "home",
   computed: {
     projectsFiltered() {
       let initialProjects = [];
-      for(let i = 0; i < (this.amountLoaded); i++) {
-        if(this.amountLoaded < 9) {
+      for (let i = 0; i < this.amountLoaded; i++) {
+        if (this.amountLoaded < this.projects.length) {
           initialProjects.push(this.projects[i]);
-          } else {
-            initialProjects = this.projects;
-          }
+        } else {
+          initialProjects = this.projects;
         }
+      }
 
-      if(this.searchInput === '') {
+      if (this.searchInput === "") {
         return initialProjects;
       } else {
-      let filtered = this.projects.filter(project => project.title.toLowerCase().includes(this.searchInput.toLowerCase()) || 
-      project.description.toLowerCase().includes(this.searchInput.toLowerCase()));
-      return filtered;
+        let filtered = this.projects.filter(
+          (project) =>
+            project.title
+              .toLowerCase()
+              .includes(this.searchInput.toLowerCase()) ||
+            project.description
+              .toLowerCase()
+              .includes(this.searchInput.toLowerCase())
+        );
+        return filtered;
       }
-    }
+    },
   },
-   methods: {
-        filterProjects() {
-          console.log(this.projectsFiltered);
-        },
-        loadMore() {
-          this.amountLoaded++;
-          console.log(this.amountLoaded);
-        }
-      },
+  methods: {
+    filterProjects() {
+      console.log(this.projectsFiltered);
+    },
+    loadMore() {
+      this.amountLoaded++;
+      console.log(this.amountLoaded);
+    },
+  },
   data() {
     return {
-      searchInput: '',
+      searchInput: "",
       amountLoaded: 3,
       projects: [
-    {   
-        category: "React",
-        title: "Portfolio Page React App",
-        description: "This is a React.js project that I created from scratch using NPM Creat React App. It includeds a projects section that is dynamically poplulated using a JSON style structured data file. It also features a working contact form that uses Google Firebase on the backend",
-        technology: ["react.js", "NPM", "react bootstraps", "javascript", "html", "css", "node.js", "express"],
-        projPicUrl: "https://emlaunch.com/wp-content/uploads/2020/06/Portfolio-Page-Pic.jpg",
-        siteUrl: "https://meyer744.github.io/jack-meyer-portfolio/",
-        gitUrl: "https://github.com/meyer744/jack-meyer-portfolio",
-    },
-    {   
-        category: "React",
-        title: "Oscar Winners React App",
-        description: "This is a React.js project that I created following an online tutorial from Telmo Sampaio. It utilizes react router, and a JSON style structured data file to dynamically populate the content.",
-        technology: ["react.js", "react router", "javascript"],
-        projPicUrl: "https://emlaunch.com/wp-content/uploads/2020/06/Oscars-App.jpg",
-        siteUrl: "https://meyer744.github.io/oscars-app",
-        gitUrl: "https://github.com/meyer744/oscars-app",
-    },
-    {   
-        category: "WordPress",
-        title: "Striker Bows WordPress Site",
-        description: "This is a React.js project that I created following an online tutorial from Telmo Sampaio",
-        technology: ["html", "css", "wordpress"],
-        projPicUrl: "https://emlaunch.com/wp-content/uploads/2020/06/striker-bows-wordpress2.jpg",
-        siteUrl: "https://strikerbows.com/",
-    },
-    {   
-        category: "WordPress",
-        title: "Area Electric WordPress Site",
-        description: "This is a React.js project that I created following an online tutorial from Telmo Sampaio",
-        technology: ["html", "css", "wordpress"],
-        projPicUrl: "https://emlaunch.com/wp-content/uploads/2020/06/areaelectric-wordpress.jpg",
-        siteUrl: "https://areaelectric.com/",
-    },
-    {   
-        category: "WordPress",
-        title: "OVIS WordPress Site",
-        description: "This is a React.js project that I created following an online tutorial from Telmo Sampaio",
-        technology: ["html", "css", "wordpress"],
-        projPicUrl: "https://emlaunch.com/wp-content/uploads/2020/06/ovis-worpdress.jpg",
-        siteUrl: "https://ohiovalleyintegration.com/",
-    },
-    {   
-        category: "WordPress",
-        title: "Regal Plumbing WordPress Site",
-        description: "This is a React.js project that I created following an online tutorial from Telmo Sampaio",
-        technology: ["html", "css", "wordpress"],
-        projPicUrl: "https://emlaunch.com/wp-content/uploads/2020/06/regal-plumbing-wordpress.jpg",
-        siteUrl: "https://www.regalmechanical.com/",
-    },
-    {   
-        category: "WordPress",
-        title: "Nitro Roofing WordPress Site",
-        description: "This is a React.js project that I created following an online tutorial from Telmo Sampaio",
-        technology: ["html", "css", "wordpress"],
-        projPicUrl: "https://emlaunch.com/wp-content/uploads/2020/06/nitro-roofing-wordpress.jpg",
-        siteUrl: "https://www.nitroroofing.com/",
-    },
-    {   
-        category: "WordPress",
-        title: "Pete Deluke & Associates WordPress Site",
-        description: "This is a React.js project that I created following an online tutorial from Telmo Sampaio",
-        technology: ["html", "css", "wordpress"],
-        projPicUrl: "https://emlaunch.com/wp-content/uploads/2020/06/pete-deluke-wordpress.jpg",
-        siteUrl: "https://petedelukeandassociates.com/about/",
-    },
-]
+        {
+          category: "React",
+          title: "Portfolio Page React App",
+          description:
+            "This is a React.js project that I created from scratch using NPM Creat React App. It includeds a projects section that is dynamically poplulated using a JSON style structured data file. It also features a working contact form that uses Google Firebase on the backend",
+          technology: [
+            "react.js",
+            "NPM",
+            "react bootstraps",
+            "javascript",
+            "html",
+            "css",
+            "node.js",
+            "express",
+          ],
+          projPicUrl:
+            "https://emlaunch.com/wp-content/uploads/2020/06/Portfolio-Page-Pic.jpg",
+          siteUrl: "https://meyer744.github.io/jack-meyer-portfolio/",
+          gitUrl: "https://github.com/meyer744/jack-meyer-portfolio",
+        },
+        {
+          category: "React",
+          title: "Oscar Winners React App",
+          description:
+            "This is a React.js project that I created following an online tutorial from Telmo Sampaio. It utilizes react router, and a JSON style structured data file to dynamically populate the content.",
+          technology: ["react.js", "react router", "javascript"],
+          projPicUrl:
+            "https://emlaunch.com/wp-content/uploads/2020/06/Oscars-App.jpg",
+          siteUrl: "https://meyer744.github.io/oscars-app",
+          gitUrl: "https://github.com/meyer744/oscars-app",
+        },
+        {
+          category: "WordPress",
+          title: "Striker Bows WordPress Site",
+          description:
+            "This is a React.js project that I created following an online tutorial from Telmo Sampaio",
+          technology: ["html", "css", "wordpress"],
+          projPicUrl:
+            "https://emlaunch.com/wp-content/uploads/2020/06/striker-bows-wordpress2.jpg",
+          siteUrl: "https://strikerbows.com/",
+        },
+        {
+          category: "WordPress",
+          title: "Area Electric WordPress Site",
+          description:
+            "This is a React.js project that I created following an online tutorial from Telmo Sampaio",
+          technology: ["html", "css", "wordpress"],
+          projPicUrl:
+            "https://emlaunch.com/wp-content/uploads/2020/06/areaelectric-wordpress.jpg",
+          siteUrl: "https://areaelectric.com/",
+        },
+        {
+          category: "WordPress",
+          title: "OVIS WordPress Site",
+          description:
+            "This is a React.js project that I created following an online tutorial from Telmo Sampaio",
+          technology: ["html", "css", "wordpress"],
+          projPicUrl:
+            "https://emlaunch.com/wp-content/uploads/2020/06/ovis-worpdress.jpg",
+          siteUrl: "https://ohiovalleyintegration.com/",
+        },
+        {
+          category: "WordPress",
+          title: "Regal Plumbing WordPress Site",
+          description:
+            "This is a React.js project that I created following an online tutorial from Telmo Sampaio",
+          technology: ["html", "css", "wordpress"],
+          projPicUrl:
+            "https://emlaunch.com/wp-content/uploads/2020/06/regal-plumbing-wordpress.jpg",
+          siteUrl: "https://www.regalmechanical.com/",
+        },
+        {
+          category: "WordPress",
+          title: "Nitro Roofing WordPress Site",
+          description:
+            "This is a React.js project that I created following an online tutorial from Telmo Sampaio",
+          technology: ["html", "css", "wordpress"],
+          projPicUrl:
+            "https://emlaunch.com/wp-content/uploads/2020/06/nitro-roofing-wordpress.jpg",
+          siteUrl: "https://www.nitroroofing.com/",
+        },
+        {
+          category: "WordPress",
+          title: "Pete Deluke & Associates WordPress Site",
+          description:
+            "This is a React.js project that I created following an online tutorial from Telmo Sampaio",
+          technology: ["html", "css", "wordpress"],
+          projPicUrl:
+            "https://emlaunch.com/wp-content/uploads/2020/06/pete-deluke-wordpress.jpg",
+          siteUrl: "https://petedelukeandassociates.com/about/",
+        },
+      ],
     };
-  }
-}
+  },
+};
 </script>
 
 <style scoped>
@@ -157,5 +192,4 @@ export default {
   padding-top: 0px;
   margin-bottom: 60px;
 }
-
 </style>
