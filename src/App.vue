@@ -1,5 +1,5 @@
 <template>
-<the-nav-bar-new :resumeLink="'https://area.emlaunch.com/wp-content/uploads/2021/01/jackMeyerResume.pdf'"></the-nav-bar-new>
+<the-nav-bar-new :resumeLink="'https://emlaunch.com/wp-content/uploads/2021/02/jackMeyerResume.pdf'"></the-nav-bar-new>
 <router-view />
 <footer-bar>Jack Meyer All Rights Reserved  2021
 Created with Vue 3</footer-bar>

@@ -46,14 +46,15 @@
                         <ul class="resume-list">
                             <li class="resume-list-item">CSS3 & HTML5</li>
                             <li class="resume-list-item">JavaScript</li>
+                            <li class="resume-list-item">Vue.js</li>
                             <li class="resume-list-item">React.js</li>
+                            <li class="resume-list-item">GitHub</li>
                             <li class="resume-list-item">Command line/ Terminal</li>
                             <li class="resume-list-item">Graphic Design</li>
                             <li class="resume-list-item">Adobe Suite</li>
                             <li class="resume-list-item">SEO/ SEM</li>
                             <li class="resume-list-item">Google Analytics</li>
                             <li class="resume-list-item">Google Ads </li>
-                            <li class="resume-list-item">Google Search Console</li>
                         </ul>
                     </div>
                     <h3 class="resume-header">EDUCATION AND COURSES</h3>
@@ -71,10 +72,9 @@
                     </div>
                     <div class="resume-section">
                 <h3 class="resume-company-header">Udemy</h3>
+               <a href="https://www.udemy.com/course/vuejs-2-the-complete-guide/"><h3 class="resume-location-header">Vue - The Complete Guide</h3></a>
                 <a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/8691788?start=225"><h3 class="resume-location-header">The Complete Web Developer in 2019</h3></a> 
-                <p class="resume-dates">COMPLETED: May 2019</p>
-                <a href="https://www.udemy.com/course/javascript-basics-for-beginners/"><h3 class="resume-location-header">JavaScript For Beginners</h3></a>   
-                <p class="resume-dates">COMPLETED: April 2020</p>
+                <a href="https://www.udemy.com/course/javascript-basics-for-beginners/"><h3 class="resume-location-header">JavaScript For Beginners</h3></a>  
                     </div>
                     </div>
         </div>
