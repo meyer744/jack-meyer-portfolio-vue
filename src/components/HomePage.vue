@@ -19,7 +19,9 @@
       :git-link="p.gitUrl"
     ></project-card>
   </div>
-  <load-more-button v-if="amountLoaded < projects.length" @click="loadMore">Load More... </load-more-button>
+  <load-more-button v-if="amountLoaded < projects.length" @click="loadMore"
+    >Load More...
+  </load-more-button>
   <my-resume></my-resume>
   <section-header>My Latest Blog Posts</section-header>
   <blog-posts-row></blog-posts-row>
@@ -87,19 +89,53 @@ export default {
       amountLoaded: 3,
       projects: [
         {
-          category: "React",
-          title: "Portfolio Page React App",
+          category: "Vue",
+          title: "Portfolio V2 Vue App",
           description:
-            "This is a React.js project that I created from scratch using NPM Creat React App. It includeds a projects section that is dynamically poplulated using a JSON style structured data file. It also features a working contact form that uses Google Firebase on the backend",
+            "This portfolio was done with Vue.js 3, and features a blog connected via a headless CMS",
+          technology: [
+            "vue.js",
+            "vue router",
+            "javascript",
+            "html",
+            "css",
+            "headless CMS",
+          ],
+          projPicUrl:
+            "https://emlaunch.com/wp-content/uploads/2021/02/portfolio-v2-pic.jpg",
+          siteUrl: "https://jackvmeyer.com",
+          gitUrl: "https://github.com/meyer744/jack-meyer-portfolio-vue",
+        },
+         {
+          category: "Vue",
+          title: "Vue 3 Weather App",
+          description:
+            "This app uses the Geolocation API to get location, and the OpenWeatherWap API. It also has the option to search by city or zip",
+          technology: [
+            "vue.js",
+            "javascript",
+            "html",
+            "css",
+            "OpenWeatherMap API",
+            "Geolocation API"
+          ],
+          projPicUrl:
+            "https://emlaunch.com/wp-content/uploads/2021/02/weather-app.jpg",
+          siteUrl: "https://elated-colden-69d0cd.netlify.app",
+          gitUrl: "https://github.com/meyer744/weather-app",
+        },
+        {
+          category: "React",
+          title: "Portfolio V1 React App",
+          description:
+            "This is a React.js project. It includeds a projects section, and a working contact form that uses Google Firebase",
           technology: [
             "react.js",
-            "NPM",
             "react bootstraps",
             "javascript",
             "html",
             "css",
-            "node.js",
-            "express",
+            "firebase",
           ],
           projPicUrl:
             "https://emlaunch.com/wp-content/uploads/2020/06/Portfolio-Page-Pic.jpg",
@@ -110,7 +146,7 @@ export default {
           category: "React",
           title: "Oscar Winners React App",
           description:
-            "This is a React.js project that I created following an online tutorial from Telmo Sampaio. It utilizes react router, and a JSON style structured data file to dynamically populate the content.",
+            "This is a simple React.js project that I created following an online tutorial. It utilizes react router, and a data file to dynamically populate the content.",
           technology: ["react.js", "react router", "javascript"],
           projPicUrl:
             "https://emlaunch.com/wp-content/uploads/2020/06/Oscars-App.jpg",
@@ -121,7 +157,7 @@ export default {
           category: "WordPress",
           title: "Striker Bows WordPress Site",
           description:
-            "This is a React.js project that I created following an online tutorial from Telmo Sampaio",
+            "This is a wordpress site that I created for a local client",
           technology: ["html", "css", "wordpress"],
           projPicUrl:
             "https://emlaunch.com/wp-content/uploads/2020/06/striker-bows-wordpress2.jpg",
@@ -131,7 +167,7 @@ export default {
           category: "WordPress",
           title: "Area Electric WordPress Site",
           description:
-            "This is a React.js project that I created following an online tutorial from Telmo Sampaio",
+            "This is a wordpress site that I created for a local client",
           technology: ["html", "css", "wordpress"],
           projPicUrl:
             "https://emlaunch.com/wp-content/uploads/2020/06/areaelectric-wordpress.jpg",
@@ -141,7 +177,7 @@ export default {
           category: "WordPress",
           title: "OVIS WordPress Site",
           description:
-            "This is a React.js project that I created following an online tutorial from Telmo Sampaio",
+            "This is a wordpress site that I created for a local client",
           technology: ["html", "css", "wordpress"],
           projPicUrl:
             "https://emlaunch.com/wp-content/uploads/2020/06/ovis-worpdress.jpg",
@@ -151,7 +187,7 @@ export default {
           category: "WordPress",
           title: "Regal Plumbing WordPress Site",
           description:
-            "This is a React.js project that I created following an online tutorial from Telmo Sampaio",
+            "This is a wordpress site that I created for a local client",
           technology: ["html", "css", "wordpress"],
           projPicUrl:
             "https://emlaunch.com/wp-content/uploads/2020/06/regal-plumbing-wordpress.jpg",
@@ -161,7 +197,7 @@ export default {
           category: "WordPress",
           title: "Nitro Roofing WordPress Site",
           description:
-            "This is a React.js project that I created following an online tutorial from Telmo Sampaio",
+            "This is a wordpress site that I created for a local client",
           technology: ["html", "css", "wordpress"],
           projPicUrl:
             "https://emlaunch.com/wp-content/uploads/2020/06/nitro-roofing-wordpress.jpg",
@@ -171,7 +207,7 @@ export default {
           category: "WordPress",
           title: "Pete Deluke & Associates WordPress Site",
           description:
-            "This is a React.js project that I created following an online tutorial from Telmo Sampaio",
+            "This is a wordpress site that I created for a local client",
           technology: ["html", "css", "wordpress"],
           projPicUrl:
             "https://emlaunch.com/wp-content/uploads/2020/06/pete-deluke-wordpress.jpg",
