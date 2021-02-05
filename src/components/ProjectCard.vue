@@ -10,8 +10,8 @@
             <li v-for="tech in techList" :key="tech" class="tech-list-item">#{{ tech }}&nbsp;</li>
         </ul>
         <div class="card-links">
-    <a :href="liveLink" class="btn btn-link text-nowrap">Live Preview</a>
-    <a v-if="gitLink != null" :href="gitLink" class="btn btn-link text-nowrap">Git Repository</a>
+    <a :href="liveLink" target="_blank" class="btn btn-link text-nowrap">Live Preview</a>
+    <a v-if="gitLink != null" :href="gitLink" target="_blank" class="btn btn-link text-nowrap">Git Repository</a>
         </div>
   </div>
   </div>
