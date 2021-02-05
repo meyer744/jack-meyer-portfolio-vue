@@ -106,7 +106,7 @@ export default {
           siteUrl: "https://jackvmeyer.com",
           gitUrl: "https://github.com/meyer744/jack-meyer-portfolio-vue",
         },
-         {
+        {
           category: "Vue",
           title: "Vue 3 Weather App",
           description:
@@ -117,12 +117,23 @@ export default {
             "html",
             "css",
             "OpenWeatherMap API",
-            "Geolocation API"
+            "Geolocation API",
           ],
           projPicUrl:
             "https://emlaunch.com/wp-content/uploads/2021/02/weather-app.jpg",
           siteUrl: "https://elated-colden-69d0cd.netlify.app",
           gitUrl: "https://github.com/meyer744/weather-app",
+        },
+        {
+          category: "Vue",
+          title: "Fizz Buzz Vue App",
+          description:
+            "The classic coding interview challege, made with Vue.js. It allows you to select a range(with error validation), and then displays the results on execution.",
+          technology: ["vue.js", "javascript", "html", "css"],
+          projPicUrl:
+            "https://emlaunch.com/wp-content/uploads/2021/02/fiizz-buzz.jpg",
+          siteUrl: "https://blissful-ramanujan-c13b16.netlify.app",
+          gitUrl: "https://github.com/meyer744/fizz-buzz",
         },
         {
           category: "React",
