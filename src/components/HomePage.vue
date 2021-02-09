@@ -110,7 +110,7 @@ export default {
           category: "Vue",
           title: "Vue 3 Weather App",
           description:
-            "This app uses the Geolocation API to get location, and the OpenWeatherWap API. It also has the option to search by city or zip",
+            "This app uses the Geolocation API to get location, and the OpenWeatherMap API. It also has the option to search by city or zip",
           technology: [
             "vue.js",
             "javascript",
