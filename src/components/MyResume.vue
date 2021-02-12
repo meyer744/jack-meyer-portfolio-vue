@@ -3,16 +3,21 @@
     <h2 class="resume-container-heading">My Resume</h2>
         <div class="resume-container">
                 <div class="resume-left">
-                <h3 class="resume-header">JOB EXPERIENCE</h3>
+                <h3 class="resume-header">PROFESSIONAL SUMMARY:</h3>
+                <p class="summary">I am a highly motivated, self-taught web developer. 
+                  I have a passion for working with JavaScript, and JavaScript frameworks.
+                  I am currently focusing on Vue.js, and have developed this portfolio with Vue 3. 
+                  My goal is to move into a position as a developer creating and maintaining web apps</p>
+                <h3 class="resume-header">WORK HISTORY</h3>
                     <div class="resume-section">
                 <h3 class="resume-company-header">Emerson Climate Technologies</h3>
-                <h3 class="resume-location-header">Sidney, Ohio - AV/ IT Analyst</h3>
+                <h3 class="resume-location-header">Sidney, Ohio - IT Analyst</h3>
                 <p class="resume-dates">April 2017 - April 2019, Jan 2020 - PRESENT</p>
                     <ul class="resume-list">
-                        <li class="resume-list-item">AV/ IT  support to end-users of all levels</li>
-                        <li class="resume-list-item">Troubleshooting basic networking issues</li>
-                        <li class="resume-list-item">SharePoint site development</li>
-                        <li class="resume-list-item">Call center software admin</li>
+                        <!-- <li class="resume-list-item">AV/ IT  support to end-users of all levels</li>
+                        <li class="resume-list-item">Troubleshooting basic networking issues</li> -->
+                        <li class="resume-list-item">SharePoint site development, and Content Management</li>
+                        <li class="resume-list-item">Developed a text-to-speech generator using an Azure rest API</li>
                     </ul>
                     </div>
                     <div class="resume-section">
@@ -20,11 +25,11 @@
                 <h3 class="resume-location-header">Troy, Ohio - SEM Specialist</h3>
                 <p class="resume-dates">April 2019 - September 2019</p>
                     <ul class="resume-list">
-                        <li class="resume-list-item">Management of pay per click accounts</li>
-                        <li class="resume-list-item">Magento Web design/ development</li>
-                        <li class="resume-list-item">Conversion Rate Optimization - A/B Testing</li>
+                        <!-- <li class="resume-list-item">Management of pay per click accounts</li> -->
+                        <li class="resume-list-item">Magento web design/ development</li>
+                        <li class="resume-list-item">Conversion rate optimization - A/B testing</li>
                         <li class="resume-list-item">Installation of conversion tracking scripts</li>
-                        <li class="resume-list-item">Automated Bidding Script Implementation</li>
+                        <li class="resume-list-item">Automated bidding script implementation</li>
                     </ul>
                     </div>
                     <div class="resume-section">
@@ -34,7 +39,7 @@
                     <ul class="resume-list">
                         <li class="resume-list-item">Wordpress website design/ development</li>
                         <li class="resume-list-item">CSS & HTML customizations</li>
-                        <li class="resume-list-item">Digital marketing services</li>
+                        <!-- <li class="resume-list-item">Digital marketing services</li> -->
                         <li class="resume-list-item">Google tag manager deployment</li>
                         <li class="resume-list-item">Google analytics site integration</li>
                     </ul>
@@ -45,10 +50,13 @@
                     <div class="resume-section">
                         <ul class="resume-list">
                             <li class="resume-list-item">CSS3 & HTML5</li>
+                            <li class="resume-list-item">Bootstraps</li>
                             <li class="resume-list-item">JavaScript</li>
                             <li class="resume-list-item">Vue.js</li>
                             <li class="resume-list-item">React.js</li>
                             <li class="resume-list-item">GitHub</li>
+                            <li class="resume-list-item">Rest API integration</li>
+                            <li class="resume-list-item">Headless CMS integration</li>
                             <li class="resume-list-item">Command line/ Terminal</li>
                             <li class="resume-list-item">Graphic Design</li>
                             <li class="resume-list-item">Adobe Suite</li>
@@ -82,6 +90,10 @@
 </template>
 
 <style scoped>
+.summary {
+  max-width: 400px;
+  font-size: 15px
+}
 .resume-container-heading {
   font-family: 'Sriracha', cursive;
   color: white;
@@ -95,7 +107,7 @@
   background-color: white;
   border-radius: 20px;
   padding: 20px;
-  max-width: 800px;
+  max-width: 920px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -129,6 +141,7 @@
   margin-left: 15px;
   text-align: left;
   list-style-type: circle !important;
+  max-width: 350px;
 }
 
 .resume-header {

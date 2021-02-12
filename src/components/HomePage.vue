@@ -17,6 +17,7 @@
       :tech-list="p.technology"
       :live-link="p.siteUrl"
       :git-link="p.gitUrl"
+      :blog-link="p.blogLink"
     ></project-card>
   </div>
   <load-more-button v-if="amountLoaded < projects.length" @click="loadMore"
@@ -163,6 +164,16 @@ export default {
             "https://emlaunch.com/wp-content/uploads/2020/06/Oscars-App.jpg",
           siteUrl: "https://meyer744.github.io/oscars-app",
           gitUrl: "https://github.com/meyer744/oscars-app",
+        },
+        {
+          category: "Power-Apps",
+          title: "Text-To-Speech Tool",
+          description:
+            "This text-to-speech generation tool uses Azure Services text-to-speech Rest API, a Microsoft Power Apps Flow, and Microsft Forms to save a .wav file to a SharePoint site.",
+          technology: ["text-to-speech API", "Rest API", "Power Apps", "Mirosoft Forms", "SharePoint"],
+          projPicUrl:
+            "https://emlaunch.com/wp-content/uploads/2021/02/Power-apps-text-to-speech.jpg",
+          blogLink: "/blog/azure-text-to-speech-API",  
         },
         {
           category: "WordPress",
