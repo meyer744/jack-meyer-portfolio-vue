@@ -67,6 +67,9 @@ export default {
 </script>
 
 <style scoped>
+.card-img-top {
+  aspect-ratio: 2 / 1;
+}
 a {
   color: rgb(54, 47, 47);
 }

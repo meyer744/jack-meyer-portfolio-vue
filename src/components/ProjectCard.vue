@@ -1,7 +1,7 @@
 <template>
 <div class="col">
 <div class="card w-100 h-100 cards shadow-lg" style="width: 18rem;">
-  <img :src="cardImage" class="card-img-top proj-pic" alt="...">
+  <img :src="cardImage" class="card-img-top proj-pic" :alt="title">
   <div class="card-body">
     <h5 class="card-title">{{title}}</h5>
     <p class="card-text project-description">{{description}}</p>
@@ -28,6 +28,7 @@ export default {
 <style scoped>
 .proj-pic {
   max-width: max-content;
+  width: 326px;
   height: 250px;
   margin-bottom: 10px;
   object-fit: cover;

@@ -104,7 +104,6 @@ export default {
           ],
           projPicUrl:
             "https://emlaunch.com/wp-content/uploads/2021/02/portfolio-v2-pic.jpg",
-          siteUrl: "https://jackvmeyer.com",
           gitUrl: "https://github.com/meyer744/jack-meyer-portfolio-vue",
         },
         {
