@@ -1,7 +1,7 @@
 <template>
 <div class="col">
 <div class="card w-100 h-100 cards shadow-lg" style="width: 18rem;">
-  <img :src="cardImage" class="card-img-top proj-pic" :alt="title">
+  <img :src="cardImage" class="card-img-top proj-pic" :alt="title" loading="lazy">
   <div class="card-body">
     <h5 class="card-title">{{title}}</h5>
     <p class="card-text project-description">{{description}}</p>
