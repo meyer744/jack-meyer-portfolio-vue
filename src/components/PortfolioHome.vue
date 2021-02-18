@@ -24,7 +24,7 @@ export default {
 .profile-pic {
   margin:auto;
   aspect-ratio: 1 / 1.2;
-  height:216px;
+  height:auto;
   width: 180px;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
