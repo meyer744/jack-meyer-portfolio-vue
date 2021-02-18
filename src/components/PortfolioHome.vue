@@ -1,7 +1,7 @@
 <template>
     <div id="Home" class="home">
         <div className="home-container">    
-            <img class="profile-pic" :src="profilePic" alt="Jack-Meyer"/>
+            <img class="profile-pic" :src="profilePic" height="216px" width="180" alt="Jack-Meyer"/>
             <div class="home-right">
                 <ul class="profile-blurb">
             <h2 class="profile-pic-heading">Jack Meyer</h2>
@@ -25,6 +25,7 @@ export default {
   margin:auto;
   height:auto;
   width: auto;
+  content-visibility: auto;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
 }
