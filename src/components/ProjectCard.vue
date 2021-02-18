@@ -28,7 +28,7 @@ export default {
 <style scoped>
 .proj-pic {
   max-width: max-content;
-  width: 326px;
+  width: auto;
   height: 250px;
   margin-bottom: 10px;
   object-fit: cover;
