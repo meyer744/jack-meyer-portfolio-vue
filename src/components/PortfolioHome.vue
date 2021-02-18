@@ -23,9 +23,8 @@ export default {
 <style scoped>
 .profile-pic {
   margin:auto;
-  aspect-ratio: 1 / 1.2;
   height:auto;
-  width: 180px;
+  width: auto;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
 }
