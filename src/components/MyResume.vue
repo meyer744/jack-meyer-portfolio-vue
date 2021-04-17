@@ -4,10 +4,9 @@
         <div class="resume-container">
                 <div class="resume-left">
                 <h3 class="resume-header">PROFESSIONAL SUMMARY:</h3>
-                <p class="summary">I am a highly motivated, self-taught web developer. 
-                  I have a passion for working with JavaScript, and JavaScript frameworks.
-                  I am currently focusing on Vue.js, and have developed this portfolio with Vue 3. 
-                  My goal is to move into a position as a developer creating and maintaining web apps</p>
+                <p class="summary">I am a highly motivated digital marketer, and self-taught web developer. 
+                  I have a passion for working with variety of web based Technologies.
+                  I am currently focusing on Vue.js, and have developed this portfolio with Vue 3.</p>
                 <h3 class="resume-header">WORK HISTORY</h3>
                     <div class="resume-section">
                 <h3 class="resume-company-header">Emerson Climate Technologies</h3>
@@ -49,20 +48,22 @@
                     <h3 class="resume-header">RELEVANT SKILLS</h3>
                     <div class="resume-section">
                         <ul class="resume-list">
-                            <li class="resume-list-item">CSS3 & HTML5</li>
-                            <li class="resume-list-item">Bootstraps</li>
+                            <li class="resume-list-item">SEO/ SEM</li>
+                            <li class="resume-list-item">Google Analytics</li>
+                            <li class="resume-list-item">Google Ads </li>
+                            <li class="resume-list-item">Google Tag Manager</li>
+                            <li class="resume-list-item">WordPress</li>
+                            <li class="resume-list-item">Graphic Design</li>
+                            <li class="resume-list-item">Adobe Suite</li>
+                            <li class="resume-list-item">CSS & HTML</li>
                             <li class="resume-list-item">JavaScript</li>
+                            <li class="resume-list-item">Bootstraps</li>
                             <li class="resume-list-item">Vue.js</li>
                             <li class="resume-list-item">React.js</li>
                             <li class="resume-list-item">GitHub</li>
                             <li class="resume-list-item">Rest API integration</li>
                             <li class="resume-list-item">Headless CMS integration</li>
                             <li class="resume-list-item">Command line/ Terminal</li>
-                            <li class="resume-list-item">Graphic Design</li>
-                            <li class="resume-list-item">Adobe Suite</li>
-                            <li class="resume-list-item">SEO/ SEM</li>
-                            <li class="resume-list-item">Google Analytics</li>
-                            <li class="resume-list-item">Google Ads </li>
                         </ul>
                     </div>
                     <h3 class="resume-header">EDUCATION AND COURSES</h3>

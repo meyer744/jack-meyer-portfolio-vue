@@ -107,6 +107,24 @@ export default {
           gitUrl: "https://github.com/meyer744/jack-meyer-portfolio-vue",
         },
         {
+          category: "Nuxtjs",
+          title: "Refine Manufacturing Nuxt.js Site",
+          description:
+            "This website was built using Nuxt.js, and utizes Storyblok headless CMS for content management",
+          technology: [
+            "nuxt.js",
+            "nuxt router",
+            "javascript",
+            "html",
+            "css",
+            "headless CMS",
+          ],
+          projPicUrl:
+            "https://emlaunch.com/wp-content/uploads/2021/04/Refine-manufacturing.png",
+          siteUrl: "https://www.refinemanufacturing.com/",
+          gitUrl: "https://github.com/meyer744/refine-manufacturing",
+        },
+        {
           category: "Vue",
           title: "Vue 3 Weather App",
           description:
@@ -169,10 +187,16 @@ export default {
           title: "Text-To-Speech Tool",
           description:
             "This text-to-speech generation tool uses Azure Services text-to-speech Rest API, a Microsoft Power Apps Flow, and Microsft Forms to save a .wav file to a SharePoint site.",
-          technology: ["text-to-speech API", "Rest API", "Power Apps", "Mirosoft Forms", "SharePoint"],
+          technology: [
+            "text-to-speech API",
+            "Rest API",
+            "Power Apps",
+            "Mirosoft Forms",
+            "SharePoint",
+          ],
           projPicUrl:
             "https://emlaunch.com/wp-content/uploads/2021/02/Power-apps-text-to-speech.jpg",
-          blogLink: "/blog/azure-text-to-speech-API",  
+          blogLink: "/blog/azure-text-to-speech-API",
         },
         {
           category: "WordPress",
