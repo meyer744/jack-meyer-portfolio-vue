@@ -110,10 +110,11 @@ export default {
           category: "Nuxtjs",
           title: "Refine Manufacturing Nuxt.js Site",
           description:
-            "This website was built using Nuxt.js, and utilizes Storyblok headless CMS for content management",
+            "This website was built using Nuxt.js, Tailwind CSS, and utilizes Storyblok headless CMS for content management",
           technology: [
             "nuxt.js",
             "nuxt router",
+            "tailwind CSS",
             "javascript",
             "html",
             "css",
