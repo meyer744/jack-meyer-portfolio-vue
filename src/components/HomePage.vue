@@ -87,7 +87,7 @@ export default {
   data() {
     return {
       searchInput: "",
-      amountLoaded: 3,
+      amountLoaded: 6,
       projects: [
         {
           category: "Vue",
@@ -142,62 +142,6 @@ export default {
             "https://emlaunch.com/wp-content/uploads/2021/02/weather-app.jpg",
           siteUrl: "https://elated-colden-69d0cd.netlify.app",
           gitUrl: "https://github.com/meyer744/weather-app",
-        },
-        {
-          category: "Vue",
-          title: "Fizz Buzz Vue App",
-          description:
-            "The classic coding interview challege, made with Vue.js. It allows you to select a range(with error validation), and then displays the results on execution.",
-          technology: ["vue.js", "javascript", "html", "css"],
-          projPicUrl:
-            "https://emlaunch.com/wp-content/uploads/2021/02/fiizz-buzz.jpg",
-          siteUrl: "https://blissful-ramanujan-c13b16.netlify.app",
-          gitUrl: "https://github.com/meyer744/fizz-buzz",
-        },
-        {
-          category: "React",
-          title: "Portfolio V1 React App",
-          description:
-            "This is a React.js project. It includeds a projects section, and a working contact form that uses Google Firebase",
-          technology: [
-            "react.js",
-            "react bootstraps",
-            "javascript",
-            "html",
-            "css",
-            "firebase",
-          ],
-          projPicUrl:
-            "https://emlaunch.com/wp-content/uploads/2020/06/Portfolio-Page-Pic.jpg",
-          siteUrl: "https://meyer744.github.io/jack-meyer-portfolio/",
-          gitUrl: "https://github.com/meyer744/jack-meyer-portfolio",
-        },
-        {
-          category: "React",
-          title: "Oscar Winners React App",
-          description:
-            "This is a simple React.js project that I created following an online tutorial. It utilizes react router, and a data file to dynamically populate the content.",
-          technology: ["react.js", "react router", "javascript"],
-          projPicUrl:
-            "https://emlaunch.com/wp-content/uploads/2020/06/Oscars-App.jpg",
-          siteUrl: "https://meyer744.github.io/oscars-app",
-          gitUrl: "https://github.com/meyer744/oscars-app",
-        },
-        {
-          category: "Power-Apps",
-          title: "Text-To-Speech Tool",
-          description:
-            "This text-to-speech generation tool uses Azure Services text-to-speech Rest API, a Microsoft Power Apps Flow, and Microsft Forms to save a .wav file to a SharePoint site.",
-          technology: [
-            "text-to-speech API",
-            "Rest API",
-            "Power Apps",
-            "Mirosoft Forms",
-            "SharePoint",
-          ],
-          projPicUrl:
-            "https://emlaunch.com/wp-content/uploads/2021/02/Power-apps-text-to-speech.jpg",
-          blogLink: "/blog/azure-text-to-speech-API",
         },
         {
           category: "WordPress",
@@ -258,6 +202,51 @@ export default {
           projPicUrl:
             "https://emlaunch.com/wp-content/uploads/2020/06/pete-deluke-wordpress.jpg",
           siteUrl: "https://petedelukeandassociates.com/about/",
+        },
+        {
+          category: "Vue",
+          title: "Fizz Buzz Vue App",
+          description:
+            "The classic coding interview challege, made with Vue.js. It allows you to select a range(with error validation), and then displays the results on execution.",
+          technology: ["vue.js", "javascript", "html", "css"],
+          projPicUrl:
+            "https://emlaunch.com/wp-content/uploads/2021/02/fiizz-buzz.jpg",
+          siteUrl: "https://blissful-ramanujan-c13b16.netlify.app",
+          gitUrl: "https://github.com/meyer744/fizz-buzz",
+        },
+        {
+          category: "React",
+          title: "Portfolio V1 React App",
+          description:
+            "This is a React.js project. It includeds a projects section, and a working contact form that uses Google Firebase",
+          technology: [
+            "react.js",
+            "react bootstraps",
+            "javascript",
+            "html",
+            "css",
+            "firebase",
+          ],
+          projPicUrl:
+            "https://emlaunch.com/wp-content/uploads/2020/06/Portfolio-Page-Pic.jpg",
+          siteUrl: "https://meyer744.github.io/jack-meyer-portfolio/",
+          gitUrl: "https://github.com/meyer744/jack-meyer-portfolio",
+        },
+         {
+          category: "Power-Apps",
+          title: "Text-To-Speech Tool",
+          description:
+            "This text-to-speech generation tool uses Azure Services text-to-speech Rest API, a Microsoft Power Apps Flow, and Microsft Forms to save a .wav file to a SharePoint site.",
+          technology: [
+            "text-to-speech API",
+            "Rest API",
+            "Power Apps",
+            "Mirosoft Forms",
+            "SharePoint",
+          ],
+          projPicUrl:
+            "https://emlaunch.com/wp-content/uploads/2021/02/Power-apps-text-to-speech.jpg",
+          blogLink: "/blog/azure-text-to-speech-API",
         },
       ],
     };
