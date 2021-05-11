@@ -144,10 +144,20 @@ export default {
           gitUrl: "https://github.com/meyer744/weather-app",
         },
         {
+          category: "Shopify",
+          title: "Refine Products Shopify Site",
+          description:
+            "This is a Shopify site that I designed and Developed",
+          technology: ["html", "css", "shopify"],
+          projPicUrl:
+            "https://emlaunch.com/wp-content/uploads/2021/05/refine-products-site.png",
+          siteUrl: "https://refine-products.com/",
+        },
+        {
           category: "WordPress",
           title: "Striker Bows WordPress Site",
           description:
-            "This is a wordpress site that I created for a local client",
+            "This is a wordpress site that I designed for a local client",
           technology: ["html", "css", "wordpress"],
           projPicUrl:
             "https://emlaunch.com/wp-content/uploads/2020/06/striker-bows-wordpress2.jpg",
@@ -157,7 +167,7 @@ export default {
           category: "WordPress",
           title: "Area Electric WordPress Site",
           description:
-            "This is a wordpress site that I created for a local client",
+            "This is a wordpress site that I designed for a local client",
           technology: ["html", "css", "wordpress"],
           projPicUrl:
             "https://emlaunch.com/wp-content/uploads/2020/06/areaelectric-wordpress.jpg",
@@ -167,7 +177,7 @@ export default {
           category: "WordPress",
           title: "OVIS WordPress Site",
           description:
-            "This is a wordpress site that I created for a local client",
+            "This is a wordpress site that I designed for a local client",
           technology: ["html", "css", "wordpress"],
           projPicUrl:
             "https://emlaunch.com/wp-content/uploads/2020/06/ovis-worpdress.jpg",
@@ -177,7 +187,7 @@ export default {
           category: "WordPress",
           title: "Regal Plumbing WordPress Site",
           description:
-            "This is a wordpress site that I created for a local client",
+            "This is a wordpress site that I designed for a local client",
           technology: ["html", "css", "wordpress"],
           projPicUrl:
             "https://emlaunch.com/wp-content/uploads/2020/06/regal-plumbing-wordpress.jpg",
@@ -187,21 +197,11 @@ export default {
           category: "WordPress",
           title: "Nitro Roofing WordPress Site",
           description:
-            "This is a wordpress site that I created for a local client",
+            "This is a wordpress site that I designed for a local client",
           technology: ["html", "css", "wordpress"],
           projPicUrl:
             "https://emlaunch.com/wp-content/uploads/2020/06/nitro-roofing-wordpress.jpg",
           siteUrl: "https://www.nitroroofing.com/",
-        },
-        {
-          category: "WordPress",
-          title: "Pete Deluke & Associates WordPress Site",
-          description:
-            "This is a wordpress site that I created for a local client",
-          technology: ["html", "css", "wordpress"],
-          projPicUrl:
-            "https://emlaunch.com/wp-content/uploads/2020/06/pete-deluke-wordpress.jpg",
-          siteUrl: "https://petedelukeandassociates.com/about/",
         },
         {
           category: "Vue",
