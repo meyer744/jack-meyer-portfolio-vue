@@ -11,7 +11,7 @@
       <div class="home-right">
         <ul class="profile-blurb">
           <h2 class="profile-pic-heading">Jack Meyer</h2>
-          <li class="profile-blurbs">Front-End Web Developer</li>
+          <li class="profile-blurbs">Frontend Developer</li>
           <li class="profile-blurbs">Graphic Designer</li>
           <li class="profile-blurbs">Digital Marketer</li>
           <li class="profile-blurbs">Proud father of two awesome kids</li>
