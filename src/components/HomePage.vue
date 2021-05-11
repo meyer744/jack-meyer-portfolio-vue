@@ -147,7 +147,7 @@ export default {
           category: "Shopify",
           title: "Refine Products Shopify Site",
           description:
-            "This is a Shopify site that I designed and Developed",
+            "This is a Shopify site that I designed and developed",
           technology: ["html", "css", "shopify"],
           projPicUrl:
             "https://emlaunch.com/wp-content/uploads/2021/05/refine-products-site.png",
