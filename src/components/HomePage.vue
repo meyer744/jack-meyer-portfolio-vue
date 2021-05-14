@@ -144,6 +144,35 @@ export default {
           gitUrl: "https://github.com/meyer744/weather-app",
         },
         {
+          category: "Vue",
+          title: "Fizz Buzz Vue App",
+          description:
+            "The classic coding interview challege, made with Vue.js. It allows you to select a range(with error validation), and then displays the results on execution.",
+          technology: ["vue.js", "javascript", "html", "css"],
+          projPicUrl:
+            "https://emlaunch.com/wp-content/uploads/2021/02/fiizz-buzz.jpg",
+          siteUrl: "https://blissful-ramanujan-c13b16.netlify.app",
+          gitUrl: "https://github.com/meyer744/fizz-buzz",
+        },
+        {
+          category: "React",
+          title: "Portfolio V1 React App",
+          description:
+            "This is a React.js project. It includeds a projects section, and a working contact form that uses Google Firebase",
+          technology: [
+            "react.js",
+            "react bootstraps",
+            "javascript",
+            "html",
+            "css",
+            "firebase",
+          ],
+          projPicUrl:
+            "https://emlaunch.com/wp-content/uploads/2020/06/Portfolio-Page-Pic.jpg",
+          siteUrl: "https://meyer744.github.io/jack-meyer-portfolio/",
+          gitUrl: "https://github.com/meyer744/jack-meyer-portfolio",
+        },
+        {
           category: "Shopify",
           title: "Refine Products Shopify Site",
           description:
@@ -202,35 +231,6 @@ export default {
           projPicUrl:
             "https://emlaunch.com/wp-content/uploads/2020/06/nitro-roofing-wordpress.jpg",
           siteUrl: "https://www.nitroroofing.com/",
-        },
-        {
-          category: "Vue",
-          title: "Fizz Buzz Vue App",
-          description:
-            "The classic coding interview challege, made with Vue.js. It allows you to select a range(with error validation), and then displays the results on execution.",
-          technology: ["vue.js", "javascript", "html", "css"],
-          projPicUrl:
-            "https://emlaunch.com/wp-content/uploads/2021/02/fiizz-buzz.jpg",
-          siteUrl: "https://blissful-ramanujan-c13b16.netlify.app",
-          gitUrl: "https://github.com/meyer744/fizz-buzz",
-        },
-        {
-          category: "React",
-          title: "Portfolio V1 React App",
-          description:
-            "This is a React.js project. It includeds a projects section, and a working contact form that uses Google Firebase",
-          technology: [
-            "react.js",
-            "react bootstraps",
-            "javascript",
-            "html",
-            "css",
-            "firebase",
-          ],
-          projPicUrl:
-            "https://emlaunch.com/wp-content/uploads/2020/06/Portfolio-Page-Pic.jpg",
-          siteUrl: "https://meyer744.github.io/jack-meyer-portfolio/",
-          gitUrl: "https://github.com/meyer744/jack-meyer-portfolio",
         },
          {
           category: "Power-Apps",
