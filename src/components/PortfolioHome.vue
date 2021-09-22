@@ -10,11 +10,11 @@
       />
       <div class="home-right">
         <ul class="profile-blurb">
-          <h2 class="profile-pic-heading">Jack Meyer</h2>
-          <li class="profile-blurbs">Frontend Developer</li>
-          <li class="profile-blurbs">Graphic Designer</li>
-          <li class="profile-blurbs">Digital Marketer</li>
-          <li class="profile-blurbs">Proud father of two awesome kids</li>
+          <h2 class="profile-pic-heading">Hello, my name is Jack Meyer</h2>
+          <li class="profile-blurbs">I love to code, solve problems, and learn new technologies.</li>
+          <!-- <li class="profile-blurbs">Graphic Designer</li>
+          <li class="profile-blurbs">Digital Marketer</li> -->
+          <!-- <li class="profile-blurbs">Proud father of two awesome kids</li> -->
         </ul>
       </div>
     </div>
@@ -78,6 +78,7 @@ export default {
 }
 
 .profile-pic-heading {
+  text-align: center;
   color: white;
   padding-top: 10px;
   font-family: "Sriracha", cursive;

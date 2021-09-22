@@ -3,20 +3,36 @@
     <h2 class="resume-container-heading">My Resume</h2>
         <div class="resume-container">
                 <div class="resume-left">
-                <h3 class="resume-header">PROFESSIONAL SUMMARY:</h3>
-                <p class="summary">I am a highly motivated digital marketer, and self-taught web developer. 
-                  I have a passion for working with variety of web based Technologies.
-                  I am currently focusing on Vue.js, and have developed this portfolio with Vue 3.</p>
+                <!-- <h3 class="resume-header">PROFESSIONAL SUMMARY:</h3>
+                <p class="summary">I am a highly motivated, and self-taught developer. 
+                  I have a passion for working with variety of Technologies.
+                  </p> -->
                 <h3 class="resume-header">WORK HISTORY</h3>
+                 <div class="resume-section">
+                <h3 class="resume-company-header">Refine Products</h3>
+                <h3 class="resume-location-header">Minster, Ohio - Director of Technology and Marketing</h3>
+                <p class="resume-dates">March 2021 - Present</p>
+                    <ul class="resume-list">
+                            <li class="resume-list-item">Shipping Software administrator</li>
+                            <li class="resume-list-item">Graphic design utilizing Adobe Photoshop</li>
+                            <li class="resume-list-item">Online sales channel management</li>
+                            <li class="resume-list-item">Shopify/ Wordpress frontend development</li>
+                    </ul>
+                    </div>
                     <div class="resume-section">
                 <h3 class="resume-company-header">Emerson Climate Technologies</h3>
                 <h3 class="resume-location-header">Sidney, Ohio - IT Analyst</h3>
-                <p class="resume-dates">April 2017 - April 2019, Jan 2020 - PRESENT</p>
+                <p class="resume-dates">April 2017 - April 2019, Jan 2020 - March 2021</p>
                     <ul class="resume-list">
-                        <!-- <li class="resume-list-item">AV/ IT  support to end-users of all levels</li>
-                        <li class="resume-list-item">Troubleshooting basic networking issues</li> -->
-                        <li class="resume-list-item">SharePoint site development, and Content Management</li>
-                        <li class="resume-list-item">Developed a text-to-speech generator using an Azure rest API</li>
+                            <li class="resume-list-item">AV/ IT  support to end-users of all levels</li>
+                            <li class="resume-list-item">Hardware/ Software maintenance of equipment</li>
+                            <li class="resume-list-item">Installation and configuration of new equipment</li>
+                            <li class="resume-list-item">Troubleshooting networking issues</li>
+                            <li class="resume-list-item">Digital signage system admin</li>
+                            <li class="resume-list-item">Visual workspace software admin</li>
+                            <li class="resume-list-item">Call center software admin</li>
+                            <li class="resume-list-item">ServiceNow ticketing system</li>
+                            <li class="resume-list-item">SharePoint site development</li>
                     </ul>
                     </div>
                     <div class="resume-section">
@@ -24,7 +40,6 @@
                 <h3 class="resume-location-header">Troy, Ohio - SEM Specialist</h3>
                 <p class="resume-dates">April 2019 - September 2019</p>
                     <ul class="resume-list">
-                        <!-- <li class="resume-list-item">Management of pay per click accounts</li> -->
                         <li class="resume-list-item">Magento web design/ development</li>
                         <li class="resume-list-item">Conversion rate optimization - A/B testing</li>
                         <li class="resume-list-item">Installation of conversion tracking scripts</li>
@@ -48,15 +63,10 @@
                     <h3 class="resume-header">RELEVANT SKILLS</h3>
                     <div class="resume-section">
                         <ul class="resume-list">
-                            <li class="resume-list-item">SEO/ SEM</li>
-                            <li class="resume-list-item">Google Analytics</li>
-                            <li class="resume-list-item">Google Ads </li>
-                            <li class="resume-list-item">Google Tag Manager</li>
-                            <li class="resume-list-item">WordPress</li>
-                            <li class="resume-list-item">Graphic Design</li>
-                            <li class="resume-list-item">Adobe Suite</li>
+                            <li class="resume-list-item">SQL</li>
                             <li class="resume-list-item">CSS & HTML</li>
                             <li class="resume-list-item">JavaScript</li>
+                            <li class="resume-list-item">Java</li>
                             <li class="resume-list-item">Bootstraps</li>
                             <li class="resume-list-item">Vue.js</li>
                             <li class="resume-list-item">React.js</li>
@@ -64,6 +74,13 @@
                             <li class="resume-list-item">Rest API integration</li>
                             <li class="resume-list-item">Headless CMS integration</li>
                             <li class="resume-list-item">Command line/ Terminal</li>
+                            <li class="resume-list-item">SEO/ SEM</li>
+                            <li class="resume-list-item">Google Analytics</li>
+                            <li class="resume-list-item">Google Ads </li>
+                            <li class="resume-list-item">Google Tag Manager</li>
+                            <li class="resume-list-item">WordPress</li>
+                            <li class="resume-list-item">Graphic Design</li>
+                            <li class="resume-list-item">Adobe Suite</li>
                         </ul>
                     </div>
                     <h3 class="resume-header">EDUCATION AND COURSES</h3>
@@ -81,7 +98,8 @@
                     </div>
                     <div class="resume-section">
                 <h3 class="resume-company-header">Udemy</h3>
-               <a href="https://www.udemy.com/course/vuejs-2-the-complete-guide/"><h3 class="resume-location-header">Vue - The Complete Guide</h3></a>
+                <a href="https://www.udemy.com/course/the-complete-oracle-sql-certification-course/"><h3 class="resume-location-header">The Complete Oracle SQL Certification Course</h3></a>
+                <a href="https://www.udemy.com/course/vuejs-2-the-complete-guide/"><h3 class="resume-location-header">Vue - The Complete Guide</h3></a>
                 <a href="https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/8691788?start=225"><h3 class="resume-location-header">The Complete Web Developer in 2019</h3></a> 
                 <a href="https://www.udemy.com/course/javascript-basics-for-beginners/"><h3 class="resume-location-header">JavaScript For Beginners</h3></a>  
                     </div>
